@@ -73,7 +73,7 @@ function startGame() {
     curY = -1;
 
     currentTeam = WHITE;
-    currentTeamText.textContent = "White's turn";
+    currentTeamText.textContent = "Red's turn";
 
     whiteCasualities = [0, 0, 0, 0, 0];
     blackCasualities = [0, 0, 0, 0, 0];
@@ -310,7 +310,7 @@ function changeCurrentTeam() {
         currentTeamText.textContent = "Blue's turn";
         currentTeam = BLACK;
     } else {
-        currentTeamText.textContent = "White's turn";
+        currentTeamText.textContent = "Red's turn";
         currentTeam = WHITE;
     }
 }
@@ -418,7 +418,7 @@ function updateCasualities(casualities, text) {
 }
 
 function updateTotalVictories() {
-    totalVictoriesText.textContent = "Games won: white " + whiteVictories + " - black " + blackVictories;
+    totalVictoriesText.textContent = "Games won: Red " + whiteVictories + " - Blue " + blackVictories;
 }
 
 function getOppositeTeam(team) {

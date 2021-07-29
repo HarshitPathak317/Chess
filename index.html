@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Chess - With Friends</title>
+    <title>Chess</title>
     <meta charset="UTF-8">
-    <script type="text/javascript" src="./javascript/chess.js"></script>
+    <link rel="stylesheet" href="style.css">
 	<style>
-		h1,h2,h3{
+		h1,h2,h3,p{
 			text-align:center;
 		}
 	</style>
 </head>
 
-<body>
+<body background-image="bg.jpg">
     <h1>Chess</h1>
+    <div class="Chess">
+    <script type="text/javascript" src="./javascript/chess.js"></script>
+    </div>
     <canvas id="chessCanvas" width="400" height="400" style="margin-left:37%;"></canvas>
     <h2 id="currentTeamText"></h2>
     <h2>White pieces lost:</h2>
@@ -20,5 +23,7 @@
     <h2>Black pieces lost:</h2>
     <h3 id="blackCasualities"></h2>
     <h2 id="totalVictories"></h2>
+    <b>
     <p>Chess By: Harsit Pathak</p>
+    </b>
 </body>
